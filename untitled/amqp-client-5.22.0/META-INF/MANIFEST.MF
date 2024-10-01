@@ -1,0 +1,65 @@
+Manifest-Version: 1.0
+Bundle-Description: The RabbitMQ Java client library allows Java appli
+ cations to interface with RabbitMQ.
+Implementation-Title: RabbitMQ Java Client
+Automatic-Module-Name: com.rabbitmq.client
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.html, http
+ s://www.gnu.org/licenses/gpl-2.0.txt, https://www.mozilla.org/en-US/M
+ PL/2.0/
+Bundle-SymbolicName: com.rabbitmq.client
+Implementation-Version: 5.22.0
+Bnd-LastModified: 1726491661281
+Bundle-ManifestVersion: 2
+Specification-Vendor: AMQP Working Group (www.amqp.org)
+Specification-Title: AMQP
+Bundle-DocURL: https://www.rabbitmq.com
+Bundle-Vendor: Broadcom Inc. and its subsidiaries.
+Import-Package: com.codahale.metrics;version="[4.2,5)";resolution:=opt
+ ional,com.fasterxml.jackson.core;version="[2.17,3)";resolution:=optio
+ nal,com.fasterxml.jackson.databind;version="[2.17,3)";resolution:=opt
+ ional,com.fasterxml.jackson.databind.node;version="[2.17,3)";resoluti
+ on:=optional,com.rabbitmq.client,com.rabbitmq.client.impl,com.rabbitm
+ q.client.impl.nio,com.rabbitmq.client.impl.recovery,com.rabbitmq.clie
+ nt.observation,com.rabbitmq.tools.json,com.rabbitmq.utility,io.microm
+ eter.common;version="[1.13,2)";resolution:=optional,io.micrometer.com
+ mon.docs;version="[1.13,2)";resolution:=optional,io.micrometer.common
+ .util;version="[1.13,2)";resolution:=optional,io.micrometer.core.inst
+ rument;version="[1.13,2)";resolution:=optional,io.micrometer.observat
+ ion;version="[1.13,2)";resolution:=optional,io.micrometer.observation
+ .docs;version="[1.13,2)";resolution:=optional,io.micrometer.observati
+ on.transport;version="[1.13,2)";resolution:=optional,io.opentelemetry
+ .api;resolution:=optional,io.opentelemetry.api.common;resolution:=opt
+ ional,io.opentelemetry.api.metrics;resolution:=optional,javax.naming,
+ javax.naming.directory,javax.net,javax.net.ssl,javax.security.auth.ca
+ llback,javax.security.auth.x500,javax.security.sasl,org.slf4j;version
+ ="[1.7,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-6.3.1.202206071316
+Implementation-Vendor: Broadcom Inc. and its subsidiaries.
+Export-Package: com.rabbitmq.client;uses:="com.rabbitmq.client.impl,co
+ m.rabbitmq.client.impl.nio,com.rabbitmq.client.impl.recovery,com.rabb
+ itmq.client.observation,com.rabbitmq.utility,javax.net,javax.net.ssl"
+ ;version="5.22.0",com.rabbitmq.client.impl;uses:="com.codahale.metric
+ s,com.rabbitmq.client,com.rabbitmq.client.impl.recovery,com.rabbitmq.
+ client.observation,com.rabbitmq.utility,io.micrometer.core.instrument
+ ,io.opentelemetry.api,io.opentelemetry.api.common,javax.net,javax.net
+ .ssl";version="5.22.0",com.rabbitmq.client.impl.nio;uses:="com.rabbit
+ mq.client,com.rabbitmq.client.impl,javax.net.ssl";version="5.22.0",co
+ m.rabbitmq.client.impl.recovery;uses:="com.rabbitmq.client,com.rabbit
+ mq.client.impl,com.rabbitmq.client.observation";version="5.22.0",com.
+ rabbitmq.client.observation;uses:="com.rabbitmq.client";version="5.22
+ .0",com.rabbitmq.client.observation.micrometer;uses:="com.rabbitmq.cl
+ ient.observation,io.micrometer.common,io.micrometer.common.docs,io.mi
+ crometer.observation,io.micrometer.observation.docs,io.micrometer.obs
+ ervation.transport";version="5.22.0",com.rabbitmq.tools;version="5.22
+ .0",com.rabbitmq.tools.json;version="5.22.0",com.rabbitmq.tools.jsonr
+ pc;uses:="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,c
+ om.rabbitmq.client";version="5.22.0",com.rabbitmq.utility;version="5.
+ 22.0"
+Bundle-Name: RabbitMQ Java Client
+Bundle-Version: 5.22.0
+Build-Jdk-Spec: 1.8
+Created-By: Apache Maven Bundle Plugin 5.1.9
+Implementation-URL: https://www.rabbitmq.com
+Specification-Version: 0.9.1
+
